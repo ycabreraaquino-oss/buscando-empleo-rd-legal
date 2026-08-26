@@ -4,15 +4,133 @@
 <meta charset="utf-8">
 <title>Buscando Empleo RD</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Buscando Empleo RD publishes short daily videos on TikTok announcing real job openings across the Dominican Republic.">
 <style>
-  body { font-family: -apple-system, "Segoe UI", sans-serif; max-width: 720px; margin: 0 auto; padding: 48px 24px; color: #0B1F4B; }
-  a { color: #D31F2E; display: block; margin-top: 12px; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px 64px;
+    color: #0B1F4B;
+    line-height: 1.65;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 40px 0 24px;
+  }
+  .logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #0B1F4B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  h1 { font-size: 26px; margin: 0; }
+  .tagline { color: #555; font-size: 15px; margin: 2px 0 0; }
+  .hero {
+    background: #FAF8F4;
+    border: 1px solid rgba(11,31,75,.12);
+    border-radius: 14px;
+    padding: 28px;
+    margin-bottom: 32px;
+  }
+  .hero p { margin: 0; font-size: 17px; }
+  h2 { font-size: 20px; color: #D31F2E; margin: 36px 0 12px; }
+  .pasos {
+    display: grid;
+    gap: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: paso;
+  }
+  .pasos li {
+    counter-increment: paso;
+    padding-left: 40px;
+    position: relative;
+  }
+  .pasos li::before {
+    content: counter(paso);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #0B1F4B;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-tiktok {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #0B1F4B;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 12px 22px;
+    border-radius: 10px;
+    margin-top: 8px;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(11,31,75,.14);
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  footer a { color: #D31F2E; text-decoration: none; }
 </style>
 </head>
 <body>
-<h1>Buscando Empleo RD</h1>
-<p>Legal pages for the Buscando Empleo RD TikTok automation.</p>
-<a href="./terminos.html">Terms of Service</a>
-<a href="./privacidad.html">Privacy Policy</a>
+
+<header>
+  <div class="logo">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+      <circle cx="10" cy="10" r="7" stroke="#fff" stroke-width="1.6"/>
+      <path d="M15 15L21 21" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <div>
+    <h1>Buscando Empleo RD</h1>
+    <p class="tagline">Vacantes reales de República Dominicana, todos los días en TikTok</p>
+  </div>
+</header>
+
+<div class="hero">
+  <p>Buscando Empleo RD is an automated channel on TikTok (<strong>@BuscandoEmpleoRD</strong>) that publishes short videos announcing real, currently open job positions across the Dominican Republic — with the position, company, location, salary when available, and how to apply.</p>
+</div>
+
+<h2>How it works</h2>
+<ul class="pasos">
+  <li>Job openings are collected from public job-alert emails from established job boards (such as Computrabajo and LinkedIn job alerts).</li>
+  <li>Each listing goes through automated checks: required fields, trusted sender domain, scam-phrase screening, and duplicate detection — anything suspicious or incomplete is discarded before it ever becomes a video.</li>
+  <li>Listings that pass are turned into a short vertical video with the job details and a narrated summary, and published to the TikTok channel.</li>
+</ul>
+
+<h2>Watch the channel</h2>
+<p>New openings are posted regularly. Follow along or check current listings directly on TikTok.</p>
+<a class="btn-tiktok" href="https://www.tiktok.com/@buscandoempleord" target="_blank" rel="noopener">Ver @BuscandoEmpleoRD en TikTok →</a>
+
+<footer>
+  <a href="./terminos.html">Terms of Service</a>
+  <a href="./privacidad.html">Privacy Policy</a>
+  <a href="mailto:desarrolladordesistemah@gmail.com">Contact</a>
+</footer>
+
 </body>
 </html>
